@@ -24,3 +24,10 @@
   (2 redirects) and `OnnxDetectionBackend` loads them.
 - Tests: drift 5/5 against minicam ec5b619
 - Next: Pi 5 install test (AC7)
+
+## 2026-10-21 — minicam docs follow-up
+- Done: minicam#3 (model docs → this repo) merged, resolving KI-002; minicam#4–#7
+  (JWT secret + cloudflared setup, README cleanup, ignore app/data/models/) merged.
+- Commit: see below
+- Tests: minicam master CI green at 2a1d2a6
+- Next: Pi 5 install test (AC7)
