@@ -30,7 +30,8 @@ uv run minicam-models validate dist/*.onnx
 
 See [docs/PLAN.md](docs/PLAN.md) for the full documentation.
 
-## License note
+## License
 
-The weights are Ultralytics YOLO models, licensed AGPL-3.0. See
-[docs/KNOWN_ISSUES.md](docs/KNOWN_ISSUES.md) (KI-001) before distributing.
+The code in this repository is MIT licensed (see [LICENSE](LICENSE)). The
+published model files are derived from Ultralytics YOLO weights and remain
+under AGPL-3.0; see [docs/KNOWN_ISSUES.md](docs/KNOWN_ISSUES.md) (KI-001).

@@ -3,6 +3,8 @@ name = "minicam-models"
 version = "0.1.0"
 description = "Reproducible YOLO ONNX exports that satisfy minicam's detection model contract."
 requires-python = ">=3.14,<3.15"
+license = "MIT"
+license-files = ["LICENSE"]
 dependencies = [
     "numpy==2.5.0",
     "onnx==1.23.2",

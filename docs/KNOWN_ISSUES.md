@@ -1,10 +1,11 @@
 # Known issues
 
 ## KI-001 Licensing of published weights — Status: Open
-Ultralytics YOLO weights and code are AGPL-3.0 (stated in each ONNX file's
-`license` metadata). Publishing them for customer devices may require AGPL
-compliance or an Ultralytics Enterprise license. The repo has no LICENSE
-file yet. Decision needed from the owner before the first public release.
+Repository code is MIT (decided 2026-10-21). The published `.onnx` assets are
+derived from Ultralytics YOLO weights, which stay AGPL-3.0 (stated in each
+file's `license` metadata); MIT does not relicense them. Distributing them to
+customer devices may require AGPL compliance or an Ultralytics Enterprise
+license. Owner decision pending before making the repo/releases public.
 
 ## KI-002 minicam docs reference outdated names — Status: Open
 minicam's `app/docs/detection.md` names the companion repo `minicam_weights`,
