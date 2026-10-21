@@ -1,0 +1,43 @@
+# Catalog of models this repo publishes. Every source file is pinned by
+# sha256; a mismatch aborts the export (see docs/SECURITY.md).
+#
+# Each model produces one asset per entry in `precisions`, named
+# "<id>-<precision>.onnx" (e.g. yolov8n-int8.onnx).
+
+[calibration]
+# COCO128 (first 100 images calibrate INT8, the remaining 28 evaluate it).
+url = "https://github.com/ultralytics/assets/releases/download/v0.0.0/coco128.zip"
+sha256 = "61e5e3028863d8ffc3b81d6a514603954889f0edd5e4b44c4ce60b2da99aeb8e"
+calibration_images = 100
+
+[[models]]
+id = "yolov8n"
+family = "YOLOv8"
+url = "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n.pt"
+sha256 = "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36"
+precisions = ["fp32", "int8"]
+profile = "Raspberry Pi 5 (CPU)"
+
+[[models]]
+id = "yolov8s"
+family = "YOLOv8"
+url = "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8s.pt"
+sha256 = "1f47a78bf100391c2a140b7ac73a1caae18c32779be7d310658112f7ac9aa78a"
+precisions = ["fp32", "int8"]
+profile = "x86 PC (CPU)"
+
+[[models]]
+id = "yolo11n"
+family = "YOLO11"
+url = "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt"
+sha256 = "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+precisions = ["fp32", "int8"]
+profile = "Raspberry Pi 5 (CPU)"
+
+[[models]]
+id = "yolo11s"
+family = "YOLO11"
+url = "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11s.pt"
+sha256 = "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5"
+precisions = ["fp32", "int8"]
+profile = "x86 PC (CPU)"

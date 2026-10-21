@@ -1,0 +1,11 @@
+# Progress
+
+## 2026-10-21 — 001 model release pipeline
+- Done: analyzed minicam's detection contract (commit 5e5c028); built contract,
+  catalog, pinned fetch, FP32/INT8 export, validator, release bundle, CLI,
+  CI + release workflows, docs and ADRs 0001–0003.
+- Local run: 8 assets (yolov8n/s, yolo11n/s × fp32/int8) all pass validation
+  and load in minicam's real `OnnxDetectionBackend`; INT8 agreement 0.92–0.95.
+- Commit: initial commit
+- Tests: 38 passed (incl. drift vs minicam) + export e2e passed; ruff, mypy clean
+- Next: create GitHub repo, decide license (KI-001), tag v0.1.0
