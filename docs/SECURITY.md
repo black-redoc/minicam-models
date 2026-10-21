@@ -17,8 +17,9 @@ tampered release asset.
 | CI token abuse | workflow `contents: read` by default, `write` only for the release job; actions pinned by commit SHA; `persist-credentials: false` |
 
 ## Secrets
-None required. Release uses the built-in `GITHUB_TOKEN`. The optional drift
-job may use `MINICAM_READ_TOKEN` (read-only, minicam repo only).
+None required. Release uses the built-in `GITHUB_TOKEN`. minicam is public, so
+the drift check needs no token; `MINICAM_READ_TOKEN` (read-only) would only be
+needed if minicam became private.
 
 ## Per-feature checklist
 - [ ] New source files pinned by sha256 from a trusted host

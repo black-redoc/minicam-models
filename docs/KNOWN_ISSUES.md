@@ -5,9 +5,10 @@ Repository code is MIT (decided 2026-10-21). The published `.onnx` assets are
 derived from Ultralytics YOLO weights, which stay AGPL-3.0 (stated in each
 file's `license` metadata); MIT does not relicense them. Distributing them to
 customer devices may require AGPL compliance or an Ultralytics Enterprise
-license. Owner decision pending before making the repo/releases public.
+license. The repo and releases were made public on 2026-10-21; AGPL
+compliance for the assets remains an open owner decision.
 
-## KI-002 minicam docs reference outdated names — Status: Open
+## KI-002 minicam docs reference outdated names — Status: In review (black-redoc/minicam#3)
 minicam's `app/docs/detection.md` names the companion repo `minicam_weights`,
 assets `yolov8n-cpu.onnx`/`yolov8s-cpu.onnx` and `ultralytics==8.4.95`. They
 should point to this repo, the `<id>-<precision>.onnx` names and 8.4.183.

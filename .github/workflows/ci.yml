@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
+  # Weekly, to catch contract drift when only minicam changes.
+  schedule:
+    - cron: "0 6 * * 1"
 
 permissions:
   contents: read
@@ -22,8 +26,9 @@ jobs:
       - run: uv run mypy src tests
       - run: uv run pytest
 
-      # Contract drift check against minicam. Runs only when the repository
-      # variable MINICAM_REPOSITORY is set (and MINICAM_READ_TOKEN if private).
+      # Contract drift check against minicam's master. Runs only when the
+      # repository variable MINICAM_REPOSITORY is set (minicam is public, so
+      # MINICAM_READ_TOKEN is only needed if it ever becomes private).
       - if: vars.MINICAM_REPOSITORY != ''
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:

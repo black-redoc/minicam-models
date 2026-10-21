@@ -16,3 +16,11 @@
 - Commit: 8f1dc1e (tag v0.1.0)
 - Tests: CI checks and release workflow green; INT8 agreement 0.85–0.91 (KI-006)
 - Next: KI-001 decision, make public, Pi 5 install test (AC7)
+
+## 2026-10-21 — 001 minicam integration
+- Done: repo public; minicam docs/placeholder updated (black-redoc/minicam#3);
+  CI drift check enabled against minicam master, plus weekly schedule.
+- Verified: minicam's current fetch code downloads `latest/download` assets
+  (2 redirects) and `OnnxDetectionBackend` loads them.
+- Tests: drift 5/5 against minicam ec5b619
+- Next: Pi 5 install test (AC7)

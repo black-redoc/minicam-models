@@ -5,7 +5,7 @@ minicam admin download a model in the required format from a GitHub Release
 URL ("Fetch from URL" in minicam's AI Detection page).
 
 ## Current focus
-Milestone: M1 - First release · Spec: specs/001-model-release-pipeline.md · Next step: decide AGPL weights (KI-001), make repo public, verify on a Pi 5 (AC7)
+Milestone: M1 - First release · Spec: specs/001-model-release-pipeline.md · Next step: verify install on a Pi 5 (AC7); merge minicam#3; AGPL decision (KI-001)
 
 ## Docs
 [ROADMAP](ROADMAP.md) · [ARCHITECTURE](ARCHITECTURE.md) · [SECURITY](SECURITY.md) ·

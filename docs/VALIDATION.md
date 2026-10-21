@@ -17,6 +17,8 @@ uv run minicam-models export && uv run minicam-models validate dist/*.onnx
   ONNX models built in `tests/conftest.py`), release bundle.
 - Drift: `test_minicam_drift.py` compares constants, COCO order, size cap,
   onnxruntime pin and preprocessing output bit-for-bit with a minicam checkout.
+  CI runs it on every push/PR and weekly (Mondays 06:00 UTC) against
+  `black-redoc/minicam@master` (repo variable `MINICAM_REPOSITORY`).
 - End-to-end (`-m export`): exports yolov8n twice, validates, checks the INT8
   gate and byte-for-byte reproducibility.
 - Release gate: every asset passes `minicam-models validate` in CI.
