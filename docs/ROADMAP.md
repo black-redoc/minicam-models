@@ -6,7 +6,7 @@
 - [x] FP32 export + INT8 QDQ quantization with FP32 agreement gate
 - [x] Validator, release bundle (manifest.json, SHA256SUMS, notes)
 - [x] CI and tag-triggered release workflows
-- [ ] GitHub repo created, first tag `v0.1.0` published
+- [x] GitHub repo created (private), first tag `v0.1.0` published
 - [ ] Verified install on a real Pi 5 via "Fetch from URL"
 
 ## Scope

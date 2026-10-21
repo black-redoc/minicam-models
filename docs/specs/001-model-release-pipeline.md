@@ -9,7 +9,7 @@ Publish YOLO detection models that a minicam admin can install via
 - [x] AC3: Source files are used only if their sha256 matches the pin; catalog rejects untrusted hosts and malformed entries → tests: `test_fetch.py::*`, `test_catalog.py::*`
 - [x] AC4: Export produces valid FP32 and INT8 assets, byte-reproducible, INT8 agreement >= 0.80 → test: `test_export.py::test_end_to_end_export_produces_valid_reproducible_assets`
 - [x] AC5: Release bundle has manifest.json, SHA256SUMS and admin notes with per-asset URLs → tests: `test_release.py::*`
-- [ ] AC6: A tag push publishes the 8 assets as a GitHub Release → manual: first `v0.1.0` run
+- [x] AC6: A tag push publishes the 8 assets as a GitHub Release → manual: first `v0.1.0` run
 - [ ] AC7: A Pi 5 running minicam installs an asset through "Fetch from URL" and draws boxes → manual
 
 ## Design
@@ -23,8 +23,9 @@ least-privilege workflow permissions. See [SECURITY](../SECURITY.md).
 - [x] contract, catalog, fetch, export, validate, release, CLI
 - [x] Tests and CI/release workflows
 - [x] Local export of all 8 assets; all pass validation and minicam's real backend
-- [ ] Create GitHub repo, push, tag v0.1.0
-- [ ] Resolve KI-001 (license) before publishing
+- [x] Create GitHub repo, push, tag v0.1.0
+- [x] Repo code licensed MIT
+- [ ] Resolve KI-001 (AGPL weights) before making releases public
 
 ## Out of scope
 YOLO26, Hailo, custom classes, training.

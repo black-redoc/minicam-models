@@ -9,3 +9,10 @@
 - Commit: initial commit
 - Tests: 38 passed (incl. drift vs minicam) + export e2e passed; ruff, mypy clean
 - Next: create GitHub repo, decide license (KI-001), tag v0.1.0
+
+## 2026-10-21 — 001 first release
+- Done: private repo black-redoc/minicam-models, MIT license for code, tag
+  v0.1.0 released by CI with 8 assets + manifest + SHA256SUMS.
+- Commit: 8f1dc1e (tag v0.1.0)
+- Tests: CI checks and release workflow green; INT8 agreement 0.85–0.91 (KI-006)
+- Next: KI-001 decision, make public, Pi 5 install test (AC7)

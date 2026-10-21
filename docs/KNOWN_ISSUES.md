@@ -24,3 +24,11 @@ torch upgrade may change or break the export; re-run `pytest -m export`.
 ## KI-005 Pi 5 latency not measured — Status: Open
 INT8 was ~28% faster than FP32 for yolov8n on an Apple M4 (onnxruntime CPU,
 4 threads). Needs measurement on real Pi 5 hardware.
+
+## KI-006 INT8 assets differ across platforms — Status: Open
+FP32 assets are byte-identical between macOS arm64 and the Linux x86_64 CI
+runner; INT8 assets are reproducible per platform but differ between them.
+v0.1.0 (CI) INT8 agreement: 0.85–0.91 vs 0.92–0.95 locally on macOS. Likely
+cause (unverified): platform differences in JPEG decoding or float
+accumulation during calibration. Repro: compare `SHA256SUMS` of a local
+export with the release's. Published assets are always the CI build.
